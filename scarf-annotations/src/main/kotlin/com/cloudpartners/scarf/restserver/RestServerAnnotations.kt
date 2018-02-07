@@ -55,7 +55,6 @@ class RestApiAnnotationProcessor: AbstractProcessor() {
         res.openWriter().use {
             it.write(JSON.indented.stringify(restApiInfo))
         }
-        val tmp = JSON.parse<RestApiInfo>(JSON.stringify(restApiInfo))
         processingEnv.messager.printMessage(Diagnostic.Kind.WARNING, res.name)
         return true
     }

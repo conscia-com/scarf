@@ -150,7 +150,7 @@ class DataAnnotationProcessor: AbstractProcessor() {
         }
 
         var classDef = """
-            package com.cloudpartners.serverlessfm.data
+            package com.cloudpartners.scarf.data
             import java.util.*
             import com.amazonaws.services.dynamodbv2.AmazonDynamoDB
             import com.amazonaws.services.dynamodbv2.model.AttributeDefinition

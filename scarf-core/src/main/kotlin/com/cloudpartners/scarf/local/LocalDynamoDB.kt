@@ -27,7 +27,7 @@ class LocalDynamoDB(val dbFileName: File) {
 
         // Load GENcreateTables.kt if it exists
         try {
-            val c = Class.forName("com.cloudpartners.serverlessfm.data.AutoGenerate").kotlin
+            val c = Class.forName("com.cloudpartners.scarf.data.AutoGenerate").kotlin
             val o = c.constructors.filter { it.parameters.isEmpty() }.first().call() as GeneratedSourcesInterface
             println("Creating tables")
             o.doIt(this.client)

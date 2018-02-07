@@ -11,7 +11,7 @@ import java.io.File
  * Heavily inspired by the answers here: https://stackoverflow.com/questions/26901613/easier-dynamodb-local-testing
  */
 class AmazonLocalDBRule : ExternalResource() {
-    private val file = File.createTempFile("serverlesskotlinfw","db")
+    private val file = File.createTempFile("scarf","db")
     private val localDynamoDB = LocalDynamoDB(file)
 
     @Throws(Throwable::class)
