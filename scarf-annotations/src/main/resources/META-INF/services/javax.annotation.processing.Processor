@@ -1,0 +1,2 @@
+com.cloudpartners.scarf.data.DataAnnotationProcessor
+com.cloudpartners.scarf.restserver.RestApiAnnotationProcessor
